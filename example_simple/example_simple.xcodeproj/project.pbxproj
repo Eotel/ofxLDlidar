@@ -1,0 +1,664 @@
+{
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "54",
+	"objects": {
+		"1744533C-8CCA-4F90-8499-4E6B8E616088": {
+			"fileRef": "DBEDBABC-F1C0-4C17-9C4A-D85B7EBEF72D",
+			"isa": "PBXBuildFile"
+		},
+		"191CD6FA2847E21E0085CBB6": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.entitlements",
+			"path": "of.entitlements",
+			"sourceTree": "<group>"
+		},
+		"191EF70929D778A400F35F26": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "openFrameworks",
+			"path": "../../../libs/openFrameworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19B789C429E5AB4A0082E9B8": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputFileListPaths": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputFileListPaths": [],
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
+			"showEnvVarsInLog": "0"
+		},
+		"229E97F4-156F-4E65-AF36-01B37C959293": {
+			"children": [
+				"39239DDB-7862-4DFC-8C7B-EAC5236C5EE5"
+			],
+			"isa": "PBXGroup",
+			"name": "serialcom",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/serialcom",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"28085FA7-8DE8-49C2-A528-DD843B0CB90D": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ldlidar_driver.cpp",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/core/ldlidar_driver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2ED00236-697B-45AC-8C9C-740D14E068EA": {
+			"children": [
+				"28085FA7-8DE8-49C2-A528-DD843B0CB90D"
+			],
+			"isa": "PBXGroup",
+			"name": "core",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/core",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"34848FC7-D319-444C-9110-C55784C01AB1": {
+			"children": [
+				"D613B521-018F-4883-B5C7-4FBB4D47E250"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxLDLidar/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"39239DDB-7862-4DFC-8C7B-EAC5236C5EE5": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "serial_interface_linux.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/serialcom/serial_interface_linux.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3A5408EE-0322-4C98-A6A1-C4580088246A": {
+			"children": [
+				"FC8AB8DE-61B6-41CD-A21D-0A4FF44F9A79",
+				"AB393FA5-3997-4B34-8325-963F0E465A18",
+				"54C7422A-6B46-4F41-8DD5-AFF7C83A0110",
+				"6ABEDD38-1944-46FA-AFFE-3EEDEE6A814A",
+				"7BF79516-E873-4299-BC17-618563BF1EA4",
+				"229E97F4-156F-4E65-AF36-01B37C959293"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3C08AC9B-A29B-4725-8ADC-A74A99CBA18B": {
+			"children": [
+				"DBEDBABC-F1C0-4C17-9C4A-D85B7EBEF72D"
+			],
+			"isa": "PBXGroup",
+			"name": "dataprocess",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/dataprocess",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3C0E3800-C1C9-4C9C-AA1C-AF912FE65F1F": {
+			"children": [
+				"E07378B2-A750-415C-B686-844204F1F8CC"
+			],
+			"isa": "PBXGroup",
+			"name": "filter",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/filter",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"415B8B3F-5AF7-4C9D-8F3B-4DA13E4C822F": {
+			"children": [
+				"8F460F4E-4C5B-4C99-997F-F7C1399150E8"
+			],
+			"isa": "PBXGroup",
+			"name": "serialcom",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/serialcom",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"49E63D26-73D3-44B8-83CE-60369E48603F": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxLDLidar.cpp",
+			"path": "../../../addons/ofxLDLidar/src/ofxLDLidar.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"54C7422A-6B46-4F41-8DD5-AFF7C83A0110": {
+			"children": [
+				"8BF617FF-477E-4520-B7E2-6398796BA707"
+			],
+			"isa": "PBXGroup",
+			"name": "filter",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/filter",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"580F8651-FE7F-402E-8E2C-49ED47497025": {
+			"fileRef": "AF8A32AA-7B6A-4B54-95AB-A53FB0F5111F",
+			"isa": "PBXBuildFile"
+		},
+		"619BBDC7-7042-41B0-9CD3-B1B24FA26EC7": {
+			"fileRef": "28085FA7-8DE8-49C2-A528-DD843B0CB90D",
+			"isa": "PBXBuildFile"
+		},
+		"65E01AF8-97B1-44AA-BF49-151EE715A286": {
+			"fileRef": "E07378B2-A750-415C-B686-844204F1F8CC",
+			"isa": "PBXBuildFile"
+		},
+		"6ABEDD38-1944-46FA-AFFE-3EEDEE6A814A": {
+			"children": [
+				"B624641F-EBC3-48A8-A6B4-37361BB9D81B"
+			],
+			"isa": "PBXGroup",
+			"name": "logger",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/logger",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"75C797D3-BAEB-4453-8F63-AC13386931EC": {
+			"fileRef": "7DBB7670-3642-4DD4-ACDB-7E12B49B7001",
+			"isa": "PBXBuildFile"
+		},
+		"76B034B2-54E9-4FF3-904F-3C08A8AD444C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ldlidar_datatype.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/core/ldlidar_datatype.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7ABBD317-60AF-4B6A-8767-C2086088FA20": {
+			"children": [
+				"2ED00236-697B-45AC-8C9C-740D14E068EA",
+				"3C08AC9B-A29B-4725-8ADC-A74A99CBA18B",
+				"3C0E3800-C1C9-4C9C-AA1C-AF912FE65F1F",
+				"AE15834D-A91E-4210-A8F8-08D9AD853ACB",
+				"C687A0FA-358D-4641-BD80-19D1C1F22522",
+				"415B8B3F-5AF7-4C9D-8F3B-4DA13E4C822F"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7BF79516-E873-4299-BC17-618563BF1EA4": {
+			"children": [
+				"FDDF5A6C-9C19-4CED-A3B4-0BF9DEAC5BE4"
+			],
+			"isa": "PBXGroup",
+			"name": "networkcom",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/networkcom",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7DBB7670-3642-4DD4-ACDB-7E12B49B7001": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "log_module.cpp",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/logger/log_module.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8BF617FF-477E-4520-B7E2-6398796BA707": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tofbf.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/filter/tofbf.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8E698563-FBDC-4B1B-8DF7-C81ED5C01C31": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ldlidar_driver.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/core/ldlidar_driver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8F460F4E-4C5B-4C99-997F-F7C1399150E8": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "serial_interface_linux.cpp",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/serialcom/serial_interface_linux.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AB393FA5-3997-4B34-8325-963F0E465A18": {
+			"children": [
+				"AEDC6B1F-6DBB-4568-A401-5F3DAE3DF1B8"
+			],
+			"isa": "PBXGroup",
+			"name": "dataprocess",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/dataprocess",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AE15834D-A91E-4210-A8F8-08D9AD853ACB": {
+			"children": [
+				"7DBB7670-3642-4DD4-ACDB-7E12B49B7001"
+			],
+			"isa": "PBXGroup",
+			"name": "logger",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/logger",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AEDC6B1F-6DBB-4568-A401-5F3DAE3DF1B8": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "lipkg.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/dataprocess/lipkg.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AF8A32AA-7B6A-4B54-95AB-A53FB0F5111F": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "network_socket_interface_linux.cpp",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B624641F-EBC3-48A8-A6B4-37361BB9D81B": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "log_module.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/logger/log_module.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B9238AAA-E0FB-4868-8C7D-9E4BEBD5C3B9": {
+			"fileRef": "8F460F4E-4C5B-4C99-997F-F7C1399150E8",
+			"isa": "PBXBuildFile"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"DE9A280D-99A6-488A-89E3-16BD8990DBB9"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../../addons",
+			"sourceTree": "<group>"
+		},
+		"C569173B-1D3A-4796-BB96-6655873FD651": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxLDLidar.h",
+			"path": "../../../addons/ofxLDLidar/src/ofxLDLidar.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C687A0FA-358D-4641-BD80-19D1C1F22522": {
+			"children": [
+				"AF8A32AA-7B6A-4B54-95AB-A53FB0F5111F"
+			],
+			"isa": "PBXGroup",
+			"name": "networkcom",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/networkcom",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D5D74146-77AC-4478-8504-4FE0D47FAB03": {
+			"children": [
+				"49E63D26-73D3-44B8-83CE-60369E48603F",
+				"C569173B-1D3A-4796-BB96-6655873FD651"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxLDLidar/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D613B521-018F-4883-B5C7-4FBB4D47E250": {
+			"children": [
+				"3A5408EE-0322-4C98-A6A1-C4580088246A",
+				"7ABBD317-60AF-4B6A-8767-C2086088FA20"
+			],
+			"isa": "PBXGroup",
+			"name": "ldlidar_driver",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DBEDBABC-F1C0-4C17-9C4A-D85B7EBEF72D": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "lipkg.cpp",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/dataprocess/lipkg.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DE9A280D-99A6-488A-89E3-16BD8990DBB9": {
+			"children": [
+				"34848FC7-D319-444C-9110-C55784C01AB1",
+				"D5D74146-77AC-4478-8504-4FE0D47FAB03"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxLDLidar",
+			"path": "../../../addons/ofxLDLidar",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E07378B2-A750-415C-B686-844204F1F8CC": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "tofbf.cpp",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/src/filter/tofbf.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E42962A92163ECCD00A6A9E2": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"name": "Run Script — Compile OF",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"showEnvVarsInLog": "0"
+		},
+		"E4A5B60F29BAAAE400C2D356": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "6",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B4A0A3A1720003C02F2": {
+			"children": [
+				"191CD6FA2847E21E0085CBB6",
+				"E4B6FCAD0C3E899E008CF71C",
+				"E4EB6923138AFD0F00A09F29",
+				"E4B69E1C0A3A1BDC003C02F2",
+				"191EF70929D778A400F35F26",
+				"BB4B014C10F69532006C3DED",
+				"E4B69B5B0A3A1756003C02F2"
+			],
+			"isa": "PBXGroup",
+			"sourceTree": "<group>"
+		},
+		"E4B69B4C0A3A1720003C02F2": {
+			"attributes": {
+				"LastUpgradeCheck": "0600"
+			},
+			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "0",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "E4B69B4A0A3A1720003C02F2",
+			"productRefGroup": "E4B69B4A0A3A1720003C02F2",
+			"projectDirPath": "",
+			"projectRoot": "",
+			"targets": [
+				"E4B69B5A0A3A1756003C02F2"
+			]
+		},
+		"E4B69B4D0A3A1720003C02F2": {
+			"buildConfigurations": [
+				"E4B69B4E0A3A1720003C02F2",
+				"E4B69B4F0A3A1720003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B4E0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "NO",
+				"ENABLE_TESTABILITY": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_WARN_UNUSED_VARIABLE": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B4F0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "3",
+				"GCC_UNROLL_LOOPS": "YES",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69B580A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4B69E200A3A1BDC003C02F2",
+				"E4B69E210A3A1BDC003C02F2",
+				"619BBDC7-7042-41B0-9CD3-B1B24FA26EC7",
+				"1744533C-8CCA-4F90-8499-4E6B8E616088",
+				"65E01AF8-97B1-44AA-BF49-151EE715A286",
+				"75C797D3-BAEB-4453-8F63-AC13386931EC",
+				"580F8651-FE7F-402E-8E2C-49ED47497025",
+				"B9238AAA-E0FB-4868-8C7D-9E4BEBD5C3B9",
+				"EF25A2BD-04F8-4923-906D-19BB0A4D65DD"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B590A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B5A0A3A1756003C02F2": {
+			"buildConfigurationList": "E4B69B5F0A3A1757003C02F2",
+			"buildPhases": [
+				"E42962A92163ECCD00A6A9E2",
+				"E4B69B580A3A1756003C02F2",
+				"E4B69B590A3A1756003C02F2",
+				"E4C2427710CC5ABF004149E2",
+				"E4A5B60F29BAAAE400C2D356",
+				"19B789C429E5AB4A0082E9B8"
+			],
+			"buildRules": [],
+			"dependencies": [],
+			"isa": "PBXNativeTarget",
+			"name": "example_simple",
+			"productName": "myOFApp",
+			"productReference": "E4B69B5B0A3A1756003C02F2",
+			"productType": "com.apple.product-type.application"
+		},
+		"E4B69B5B0A3A1756003C02F2": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "example_simpleDebug.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E4B69B5F0A3A1757003C02F2": {
+			"buildConfigurations": [
+				"E4B69B600A3A1757003C02F2",
+				"E4B69B610A3A1757003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B600A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "NO",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"../../../addons/ofxLDLidar/libs",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/core",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/dataprocess",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/filter",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/logger",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/networkcom",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/serialcom",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/core",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/dataprocess",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/filter",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/logger",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/networkcom",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/serialcom",
+					"../../../addons/ofxLDLidar/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)"
+				]
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B610A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "YES",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"../../../addons/ofxLDLidar/libs",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/core",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/dataprocess",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/filter",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/logger",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/networkcom",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/include/serialcom",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/core",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/dataprocess",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/filter",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/logger",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/networkcom",
+					"../../../addons/ofxLDLidar/libs/ldlidar_driver/src/serialcom",
+					"../../../addons/ofxLDLidar/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF)"
+				],
+				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69E1C0A3A1BDC003C02F2": {
+			"children": [
+				"E4B69E1D0A3A1BDC003C02F2",
+				"E4B69E1E0A3A1BDC003C02F2",
+				"E4B69E1F0A3A1BDC003C02F2"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1D0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "main.cpp",
+			"path": "src/main.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1E0A3A1BDC003C02F2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofApp.cpp",
+			"path": "src/ofApp.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1F0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E200A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1D0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B69E210A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1E0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B6FCAD0C3E899E008CF71C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "openFrameworks-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"E4C2427710CC5ABF004149E2": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "10",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4EB6923138AFD0F00A09F29": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"EF25A2BD-04F8-4923-906D-19BB0A4D65DD": {
+			"fileRef": "49E63D26-73D3-44B8-83CE-60369E48603F",
+			"isa": "PBXBuildFile"
+		},
+		"FC8AB8DE-61B6-41CD-A21D-0A4FF44F9A79": {
+			"children": [
+				"76B034B2-54E9-4FF3-904F-3C08A8AD444C",
+				"8E698563-FBDC-4B1B-8DF7-C81ED5C01C31"
+			],
+			"isa": "PBXGroup",
+			"name": "core",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/core",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"FDDF5A6C-9C19-4CED-A3B4-0BF9DEAC5BE4": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "network_socket_interface_linux.h",
+			"path": "../../../addons/ofxLDLidar/libs/ldlidar_driver/include/networkcom/network_socket_interface_linux.h",
+			"sourceTree": "SOURCE_ROOT"
+		}
+	},
+	"openFrameworksProjectGeneratorVersion": "21",
+	"rootObject": "E4B69B4C0A3A1720003C02F2"
+}

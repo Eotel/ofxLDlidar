@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RunDebug" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="example_simple" TARGET_NAME="RunDebug" CONFIG_NAME="RunDebug" version="1" RUN_PATH="$PROJECT_DIR$/bin/example_simple_debug.app/Contents/MacOS/example_simple_debug">
+    <method v="2">
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_make Debug" />
+    </method>
+  </configuration>
+</component>
