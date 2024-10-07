@@ -34,7 +34,7 @@
 LogModule* LogModule::s_plog_module_ = NULL;
 
 
-LogModule* LogModule::GetInstance(__in const char* filename, __in const char* funcname, __in int lineno,LogLevel level,ILogRealization* plog) {
+LogModule* LogModule::GetInstance(const char* filename,  const char* funcname,  int lineno,LogLevel level,ILogRealization* plog) {
 	if (s_plog_module_ == NULL) {
 		s_plog_module_ = new LogModule();
 	}
