@@ -105,7 +105,16 @@ device::GenericDevice::GenericDevice(const std::string& lidarType)
 device::GenericDevice::~GenericDevice()
 {
     disconnect();
+#if defined(_WIN32) || defined(_WIN64)
+    if (_driver) ::ldlidar::LDLidarDriverWinInterface::Destory(_driver);
+#elif defined(__linux__)
+    // TODO: GPIO で Serial 通信している場合を考慮
+    if (_driver) ::ldlidar::LDLidarDriverLinuxInterface::Destory(_driver);
+#elif defined(__APPLE__)
     if (_driver) ::ldlidar::LDLidarDriverUnixInterface::Destory(_driver);
+#else
+#error "Unsupported platform"
+#endif
 }
 
 bool device::GenericDevice::connect(const string& serialPath)
