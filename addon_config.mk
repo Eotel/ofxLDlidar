@@ -96,6 +96,9 @@ linuxarmv6l:
 linuxarmv7l:
 	ADDON_SOURCES_EXCLUDE = libs/ldlidar/src/arch/win%
 	ADDON_SOURCES_EXCLUDE += libs/ldlidar/src/arch/osx%
+linuxaarch64:
+	ADDON_SOURCES_EXCLUDE = libs/ldlidar/src/arch/win%
+	ADDON_SOURCES_EXCLUDE += libs/ldlidar/src/arch/osx%
 osx:
 	ADDON_SOURCES_EXCLUDE = libs/ldlidar/src/arch/win%
 	ADDON_SOURCES_EXCLUDE += libs/ldlidar/src/arch/linux%
