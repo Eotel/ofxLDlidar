@@ -33,16 +33,15 @@
 #if defined(_WIN32) || defined(_WIN64)
 #include <windows.h>
 #elif defined(__linux__)
-//#include <pthread.h>
 #include <stdarg.h>
 #define printf_s(fileptr,str)  (fprintf(fileptr,"%s",str))
-#define __in
+// Remove or rename the macro definition
+//#define __in
 #elif defined(__APPLE__)
-// macOS-specific headers (if needed)
-// In this case, macOS doesn't need additional headers for this example, so no changes here.
 #include <stdarg.h>
 #define printf_s(fileptr,str)  (fprintf(fileptr,"%s",str))
-#define __in
+// Remove or rename the macro definition
+//#define __in
 #endif
 
 struct LogVersion {
@@ -163,7 +162,7 @@ public:
 
   ILogRealization* p_realization_;
 public:
-  static  LogModule* GetInstance( __in const char* filename, __in const char* funcname,__in int lineno, LogLevel level, ILogRealization* plog = NULL);
+  static  LogModule* GetInstance(const char* filename, const char* funcname, int lineno, LogLevel level, ILogRealization* plog = NULL);
   static  LogModule* GetInstance(LogLevel level, ILogRealization* plog = NULL);
   static  LogModule* GetInstancePrintOriginData(LogLevel level, ILogRealization* plog = NULL);
 
