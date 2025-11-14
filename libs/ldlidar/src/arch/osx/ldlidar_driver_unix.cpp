@@ -315,6 +315,23 @@ bool LDLidarDriverUnixInterface::Start(void) {
     return false;
   }
 
+  // Send START_LIDAR_SCAN command (0xA0)
+  LidarCmdDataType cmd;
+  cmd.header = 0xAA;  // Command packet header
+  cmd.mode = SET_START_LIDAR_SCAN;  // 0xA0
+  cmd.datalen = 0x04;  // 4 bytes of data
+  cmd.data = 0x00000000;  // No additional data needed
+  cmd.crc8 = CalCRC8((uint8_t*)&cmd, sizeof(cmd) - 1);  // Calculate CRC excluding crc8 field
+
+  uint32_t tx_len = 0;
+  if (comm_serial_ != nullptr && comm_serial_->IsOpened()) {
+    if (!comm_serial_->WriteToIo((uint8_t*)&cmd, sizeof(cmd), &tx_len)) {
+      LOG_ERROR("Failed to send START_LIDAR_SCAN command","");
+      return false;
+    }
+    LOG_INFO("Sent START_LIDAR_SCAN command (0xA0)","");
+  }
+
   is_start_flag_ = true;
 
   last_pubdata_times_ = std::chrono::steady_clock::now();
@@ -329,10 +346,27 @@ bool LDLidarDriverUnixInterface::Stop(void) {
     return true;
   }
 
+  // Send STOP_LIDAR_SCAN command (0xA1)
+  LidarCmdDataType cmd;
+  cmd.header = 0xAA;  // Command packet header
+  cmd.mode = SET_STOP_LIDAR_SCAN;  // 0xA1
+  cmd.datalen = 0x04;  // 4 bytes of data
+  cmd.data = 0x00000000;  // No additional data needed
+  cmd.crc8 = CalCRC8((uint8_t*)&cmd, sizeof(cmd) - 1);  // Calculate CRC excluding crc8 field
+
+  uint32_t tx_len = 0;
+  if (comm_serial_ != nullptr && comm_serial_->IsOpened()) {
+    if (!comm_serial_->WriteToIo((uint8_t*)&cmd, sizeof(cmd), &tx_len)) {
+      LOG_ERROR("Failed to send STOP_LIDAR_SCAN command","");
+    } else {
+      LOG_INFO("Sent STOP_LIDAR_SCAN command (0xA1)","");
+    }
+  }
+
   SetLidarDriverStatus(false);
-  
+
   is_start_flag_ = false;
-  
+
   return true;
 }
 
